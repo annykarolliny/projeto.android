@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../assets/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e; 
+
+
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Barlow Semi Condensed', sans-serif;
+    --fonte3: 'Android', sans-serif;
+}
+
+
+body{
+    font-family: var(--fonte1);
+    background-color: var(--cor0);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /* to bottom - para baixo */
+    text-align: center;
+    min-height: 150px;
+    padding-top: 60px;
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    font-weight: normal;
+    color: white;
+    font-size: 47px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+    text-transform: uppercase;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte1);
+    font-size: 1.1em;
+    padding-left: 10px; /* Para não colar nas bordas quando quebrar */
+    padding-right: 10px; /* Para não colar nas bordas quando quebrar */
+    padding-top: 13px;
+    padding-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.360);
+}
+
+nav > a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    transition-duration: 0.5s; /* Transição no momento que passa o mouse de um elemento para o outro */
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border-radius: 7px;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    max-width: 990px; /* Máxima largura */
+    min-width: 300px; /* Mínima largura */
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+article > h1{
+    font-family: var(--fonte3);
+    font-weight: normal;
+    color: rgb(2, 54, 2);
+    font-size: 1.7em;
+}
+
+main p{
+    text-indent: 24px;
+    text-align: justify;
+    line-height: 2em;
+    margin: 15px 0px;
+}
+
+main h2{
+    font-family: var(--fonte3);
+    font-size: 1.2em;
+    font-weight: normal;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+main img{
+    margin: 20px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#imgbugdroid{
+    max-width: 350px;
+}
+
+section.video{
+    margin: 0px -20px 30px -20px;
+    padding: 40px;
+    background-color: var(--cor4);
+    position: relative;
+    padding-bottom: 55%;
+}
+
+section.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.308);
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    padding: 10px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > ul{
+    list-style-position: inside; /* Os pontos da lista adequam-se dentro do bloco colorido */
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    padding: 4px;
+}
+
+footer > p{
+    font-size: 13px;
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer > p > a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
